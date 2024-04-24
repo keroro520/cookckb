@@ -26,10 +26,13 @@ export async function updateScript() {
     const outdatedConfig = appConfig.CKB.SCRIPTS;
 
     const refreshed = await refreshScriptConfigs(outdatedConfig, {
+
+        // 
         resolve: createRpcResolver(rpc),
     });
 
     appConfig.CKB.SCRIPTS = refreshed;
+
 }
 
 export async function initLumos() {

@@ -16,6 +16,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { WalletProvider } from './walletmgr/WalletContext';
 
 
+
 await updateScript();
 initLumos();
 
